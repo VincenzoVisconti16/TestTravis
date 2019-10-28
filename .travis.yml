@@ -4,9 +4,9 @@ jdk:
 
 addons:   
   sonarcloud:
-    organization: VincenzoVisconti16
+    organization: "VincenzoVisconti16"
     token:
-      secure: 5dd2de10f0a9b1d94dc8709bddeaf14d984d71d8
+      secure: 599923836f5441b2d7a550a67cac660bf61b583a
       
 script: 
 - ant build 
