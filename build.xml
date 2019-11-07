@@ -3,15 +3,14 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Tabella">
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Calcolatrice">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../eclipse/"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
-    <path id="Tabella.classpath">
+    <path id="Calcolatrice.classpath">
         <pathelement location="bin"/>
-        <pathelement location="src/lib/mariadb-java-client-1.1.7.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
@@ -31,7 +30,7 @@
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
-            <classpath refid="Tabella.classpath"/>
+            <classpath refid="Calcolatrice.classpath"/>
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
@@ -48,9 +47,9 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="Connections">
-        <java classname="Connections" failonerror="true" fork="yes">
-            <classpath refid="Tabella.classpath"/>
+    <target name="Main">
+        <java classname="Main" failonerror="true" fork="yes">
+            <classpath refid="Calcolatrice.classpath"/>
         </java>
     </target>
 </project>
