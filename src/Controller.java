@@ -3,8 +3,7 @@ public class Controller {
 	
 	double ris = 0;
 	String result = "";
-	String ciao = "ciao";
-	
+
 	public String operation(double x, double y, String operator) {
 		
 		switch (operator) {
