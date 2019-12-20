@@ -4,6 +4,7 @@ public class Controller {
 	double ris = 0;
 	String result = "";
 	String ciao = "Ciao";
+	String Vincenzo = "Vincenzo";
 	public String operation(double x, double y, String operator) {
 		
 		switch (operator) {
