@@ -6,6 +6,7 @@ public class Controller {
 	String ciao = "Ciao";
 	String Vincenzo = "Vincenzo";
 	String Alessio = "Alessio";
+	String LOL = "LOL";
 	public String operation(double x, double y, String operator) {
 		
 		switch (operator) {
