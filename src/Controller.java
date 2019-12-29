@@ -5,7 +5,7 @@ public class Controller {
 	String result = "";
 	String ciao = "Ciao";
 	String Vincenzo = "Vincenzo";
-	String Alessio = "Alessio";
+	String Alessio = "Vaniglia";
 	String LOL = "LOL";
 	public String operation(double x, double y, String operator) {
 		
