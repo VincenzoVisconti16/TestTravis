@@ -5,8 +5,8 @@ public class Controller {
 	String result = "";
 	String ciao = "Ciao";
 	String Vincenzo = "Vincenzo";
-	String Evelyn = "Evelyn";
-	String Lezzo = "Lezzo";
+	String Alessio = "Alessio";
+	String LOL = "LOL";
 	public String operation(double x, double y, String operator) {
 		
 		switch (operator) {
